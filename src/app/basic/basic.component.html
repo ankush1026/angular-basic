@@ -1,8 +1,5 @@
-<h1>My name is {{name}}</h1>
-<h2>basic works!</h2>
-<input type="text" id="{{myid}}" value="ankush" name="fname">
-<br><br>
-<div class="row">
-    <button (click)="onclick()">Click Event</button>
-    {{clickbtn}}
-</div>
+<p>basic works!</p>
+<br>
+<input #myinput type="text" value="name">
+<br>
+<button (click)="message(myinput.value)">Template Reference</button>

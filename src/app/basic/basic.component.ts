@@ -8,12 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class BasicComponent implements OnInit {
 
   constructor() { }
-  public name="Ankush";
-  public myid="fname";
-  onclick() {
-    console.log("Click event works");
-    
-  }
+  message(value) {
+    console.log(value);
+  };
   ngOnInit(): void {
   }
 
